@@ -1,121 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeeshan Riaz - CV</title>
+    <title>Professional CV - Sammreen Amir</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
             color: #333;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 900px;
+        }
+
+        .profile-header {
             text-align: center;
+            margin-bottom: 20px;
         }
-        header h1 {
+
+        .profile-header h1 {
+            font-size: 2.5rem;
             margin: 0;
-            font-size: 2.5em;
         }
-        header p {
-            margin: 5px 0;
-            font-size: 1.2em;
+
+        .profile-header p {
+            font-size: 1.2rem;
+            color: #777;
         }
-        header a {
-            color: #ffcc00;
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #007bff;
             text-decoration: none;
         }
-        section {
-            background-color: #fff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            font-size: 1.8em;
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+
+        .list-unstyled li {
+            margin-bottom: 10px;
         }
-        ul p {
-            margin: 5px 0;
-            font-size: 1.1em;
+
+        .project-item,
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+
+        .project-item h5,
+        .experience-item h5 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .project-item p,
+        .experience-item p {
+            margin-bottom: 5px;
+        }
+
+        .profile-header,
+        .profile-header p,
+        .section-title,
+        .contact-info,
+        .list-unstyled,
+        .project-item,
+        .experience-item {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .profile-header:hover,
+        .profile-header p:hover,
+        .section-title:hover,
+        .contact-info a:hover,
+        .list-unstyled li:hover,
+        .project-item:hover,
+        .experience-item:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .profile-header h1 {
+                font-size: 2rem;
+            }
+
+            .profile-header p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+            }
+
+            .experience-row {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .experience-col {
+                flex: 0 0 31%;
+            }
+        }
+
+        .experience-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .experience-col {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+        .personal-info {
+            margin-top: 30px;
+        }
+
+        .personal-info p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Zeeshan Riaz</h1>
-        <p>Email: <a href="mailto:zeeshanriazofficial@gmail.com">zeeshanriazofficial@gmail.com</a></p>
-        <p>Address: Gujrat, Pakistan</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/zeeshan-riaz-02293a252/" target="_blank">Zeeshan Riaz</a></p>
-        <p>GitHub: <a href="https://github.com/zeeshanriaz763" target="_blank">Zeeshan Riaz</a></p>
-    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="profile-header">
+                    <h1>Zeeshan Riaz</h1>
+                </div>
+            </div>
+        </div>
 
-    <section id="professional-summary">
-        <h2>Professional Summary</h2>
-        <p>I am Zeeshan Riaz, a technology enthusiast with a Bachelor's degree in Computer Science, which has laid the foundation for a rewarding career in the tech industry. Passionate about cloud computing, I have expanded my skill set with two significant AWS certifications – AWS Practitioner and AWS Solution Architect Associate. These certifications have equipped me with the knowledge and proficiency to design and implement scalable, secure, and cost-effective AWS solutions.</p>
-        <p>Currently, I am focused on advancing my career as an Associate DevOps Engineer, where I leverage my expertise to automate processes, enhance system reliability, and ensure seamless deployment of applications. My key skills include implementing and maintaining CI/CD pipelines, managing infrastructure as code with tools like Terraform and Ansible, and setting up comprehensive monitoring and incident response systems.</p>
-    </section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="personal-info">
+                    <h2 class="section-title">Personal Information</h2>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> <a href="mailto:zeeshanriazofficial@gmail.com">zeeshanriazofficial@gmail.com</a></li>
+                        <li><strong>Contact:</strong> +92 331 9610423</li>
+                        <li><strong>Address:</strong> Gujrat, Punjab, Pakistan</li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zeeshan-riaz-02293a252/" target="_blank">linkedin.com/in/zeeshan-riaz-02293a252/</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/zeeshanriaz763" target="_blank">github.com/zeeshanriaz763/</a></li>
+                    </ul>
+                </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor's in Computer Science, The University of Lahore, 2021</p>
-    </section>
+                <section id="about" class="mt-4">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am Zeeshan Riaz, a technology enthusiast with a Bachelor's degree in Computer Science, which has laid the foundation for a rewarding career in the tech industry. Passionate about cloud computing, I have expanded my skill set with two significant AWS courses – AWS Practitioner and AWS Solution Architect Associate. These courses have equipped me with the knowledge and proficiency to design and implement scalable, secure, and cost-effective AWS solutions.
+</p>
+                    <p>In addition to my skills, I have also worked as an Associate DevOps Engineer where I managed CI/CD pipelines, automated deployment processes, and monitored system performance to implement optimizations. This role enhanced my understanding of deployment workflows and system reliability.</p>
+                    <p>With a passion for continuous learning, I keep myself updated with the latest technologies and trends in DevOps and cloud computing. I thrive in collaborative environments and enjoy mentoring junior engineers. My goal is to build robust and efficient infrastructure that ensures seamless deployment, reliability, and scalability of applications.</p>
+                </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Associate DevOps Engineer</h3>
-        <ul>
-            <p>Implemented and maintained CI/CD pipelines</p>
-            <p>Managed infrastructure as code with Terraform and Ansible</p>
-            <p>Set up comprehensive monitoring and incident response systems</p>
-        </ul>
-    </section>
+                <section id="experience" class="mt-4">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="experience-row">
+                        <div class="experience-col">
+                            <div class="experience-item">
+                                <h5>Web Developer</h5>
+                                <p><em>10/1/2024 – Current</em></p>
+                                <ul class="list-unstyled">
+                                    <li>Adan IT Center, Gujrat, Pakistan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-col">
+                            <div class="experience-item">
+                                <h5>Web Developer</h5>
+                                <p><em>01/2021 – 06/2021</em></p>
+                                <ul class="list-unstyled">
+                                    <li> (Node Agency) Islamabad, Pakistan</li>
+                                    <li>Web Development</li>
+                                    <li>Training for Final Year Projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-col">
+                            <div class="experience-item">
+                                <h5>Associate DevOps Engineer</h5>
+                                <p><em>05/2024 – Current</em></p>
+                                <ul class="list-unstyled">
+                                    <li>Adan IT Center, Gujrat, Pakistan</li>
+                                    <li>Automated deployment processes</li>
+                                    <li>Monitored system performance and implemented optimizations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Technical Skills</h3>
-        <ul>
-            <p>AWS Cloud Services</p>
-            <p>CI/CD Pipelines</p>
-            <p>Terraform</p>
-            <p>Ansible</p>
-            <p>Monitoring and Incident Response Systems</p>
-        </ul>
-        <h3>Soft Skills</h3>
-        <ul>
-            <p>Problem-solving</p>
-            <p>Communication</p>
-            <p>Team collaboration</p>
-            <p>Time management</p>
-        </ul>
-    </section>
+                <section id="education" class="mt-4">
+                    <h2 class="section-title">Education</h2>
+                    <div class="project-item">
+                        <h5>The University of Lahore, Gujrat Campus</h5>
+                        <p><em>10/2016 – 06/2021</em></p>
+                        <ul class="list-unstyled">
+                            <li>Bachelor of Science (BS) in Computer Science</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h5>Superior College, Gujrat, Pakistan</h5>
+                        <p><em>2014 – 2016</em></p>
+                        <ul class="list-unstyled">
+                            <li>Intermediate in Computer Science (ICS)</li>
+                        </ul>
+                    </div>
+                </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <p>AWS Practitioner, Amazon Web Services</p>
-            <p>AWS Solution Architect Associate, Amazon Web Services</p>
-        </ul>
-    </section>
+                <section id="projects" class="mt-4">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project-item">
+                        <h5>MyDorm.pk</h5>
+                        <p><em>05/2021 – 10/23</em></p>
+                        <p>A website providing services and resources for hostels.</p>
+                        <ul class="list-unstyled">
+                            <li>Contributed as SRS Documentation Specialist</li>
+                        </ul>
+                    </div>
+                </section>
 
-    <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-            <p>Urdu (Native)</p>
-            <p>English (Fluent)</p>
-        </ul>
-    </section>
+                <section id="technical-skills" class="mt-4">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <ul class="list-unstyled">
+                        <li><strong>Programming Languages:</strong> C, C++, Java, HTML</li>
+                        <li><strong>Version Control:</strong> Git</li>
+                        <li><strong>Frameworks:</strong> Bootstrap</li>
+                        <li><strong>Other:</strong> Microsoft Office, Graphic Design and Layout</li>
+                        <li><strong>Soft Skills:</strong> Team Leadership, Project Management, Communication, Problem Solving</li>
+                    </ul>
+                </section>
+
+                <section id="languages" class="mt-4">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="list-unstyled">
+                        <li><strong>English:</strong> Fluent</li>
+                        <li><strong>Urdu:</strong> Native</li>
+                    </ul>
+                </section>
+                
+
+                <section id="contact" class="mt-4">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="contact-info">
+                        <p>Feel free to contact me via <a href="mailto:zeeshanriazofficial@gmail.com">email</a> or connect on <a
+                                href="https://www.linkedin.com/in/zeeshan-riaz-02293a252/" target="_blank">LinkedIn</a>.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Placeholder for any sidebar content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-p6I7Lm/Zb5QoQ8Xr2uM8a8QF1H7kqPLg6HGr4HJONVpM7TtPjI4fYVP1Pjph7ccv"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-7s0P+2VUDSh9GqAdXe2Q/mR7MloZfYGSFvGL6PFXqtvKAwB/x4ZgmlENK/r5HS+q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
